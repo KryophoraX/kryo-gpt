@@ -1,13 +1,15 @@
+import React, { useState } from 'react';
+
 function App() {
-  import React, { useState } from 'react'
 
 // qbreader-llm GitHub Page - single-file React app
 // - Uses Tailwind classes (no imports required in canvas preview)
 // - Default export is the App component
 // - Replace placeholder endpoints with your GitHub/HF/Colab URLs
 
-export default function App(){
+function App(){
   const [topic, setTopic] = useState('World Capitals')
+export default App;
   const [generated, setGenerated] = useState('')
   const [datasetName, setDatasetName] = useState('No file chosen')
   const [training, setTraining] = useState(false)
